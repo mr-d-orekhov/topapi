@@ -7,5 +7,5 @@
       "src/TopSdk.php"
     ]
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "stable"
 }
