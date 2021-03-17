@@ -1,0 +1,11 @@
+{
+  "name": "zvetnoe/topsdk",
+  "description": "topsdk copy from app",
+  "license": "MIT",
+  "autoload": {
+    "files": [
+      "src/TopSdk.php"
+    ]
+  },
+  "minimum-stability": "stable",
+}
