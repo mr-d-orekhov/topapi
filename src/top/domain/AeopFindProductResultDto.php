@@ -83,6 +83,16 @@ class AeopFindProductResultDto
 	public $detail;
 	
 	/** 
+	 * 产品的批发折扣
+	 **/
+	public $dp_bulk_discount;
+	
+	/** 
+	 * 产品的批发折扣
+	 **/
+	public $dp_bulk_order;
+	
+	/** 
 	 * 错误代码
 	 **/
 	public $error_code;
@@ -91,6 +101,11 @@ class AeopFindProductResultDto
 	 * 报错信息
 	 **/
 	public $error_message;
+	
+	/** 
+	 * 扩展参数 json格式 custom_image 分国家 vat_tags 含税标
+	 **/
+	public $ext_param;
 	
 	/** 
 	 * 产品关联的运费模版ID

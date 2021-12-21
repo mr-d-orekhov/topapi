@@ -13,7 +13,7 @@ class AeopSkuProperty
 	public $property_value_definition_name;
 	
 	/** 
-	 * SKU属性值ID
+	 * none
 	 **/
 	public $property_value_id;
 	

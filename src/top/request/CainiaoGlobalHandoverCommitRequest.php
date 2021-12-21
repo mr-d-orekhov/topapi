@@ -3,7 +3,7 @@
  * TOP API: cainiao.global.handover.commit request
  * 
  * @author auto create
- * @since 1.0, 2021.02.25
+ * @since 1.0, 2021.06.07
  */
 class CainiaoGlobalHandoverCommitRequest
 {

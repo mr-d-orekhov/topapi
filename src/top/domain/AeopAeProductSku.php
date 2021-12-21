@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 列表类型，以json格式来表达。参看aeopAeProductSKUs数据结构。特别提示：新增SKU实际可售库存属性ipmSkuStock，该属性值的合理取值范围为0~999999，如该商品有SKU时，请确保至少有一个SKU是有货状态，也就是ipmSkuStock取值是1~999999，在整个商品纬度库存值的取值范围是1~999999。
+ * 商品的SKU信息，列表类型，以json格式来表达。参看aeopAeProductSKUs数据结构。特别提示：新增SKU实际可售库存属性ipmSkuStock，该属性值的合理取值范围为0~999999，如该商品有SKU时，请确保至少有一个SKU是有货状态，也就是ipmSkuStock取值是1~999999，在整个商品纬度库存值的取值范围是1~999999。
  * @author auto create
  */
 class AeopAeProductSku
@@ -18,12 +18,17 @@ class AeopAeProductSku
 	public $aeop_s_k_u_property;
 	
 	/** 
-	 * 货币单位。如果不提供该值信息，则默认为"USD"；非俄罗斯卖家这个属性值可以不提供。对于俄罗斯海外卖家，该单位值必须提供，如: "RUB"。
+	 * 供应链条码，非供应链仓库发布不要填写
+	 **/
+	public $barcode;
+	
+	/** 
+	 * 产品货币单位。如果不提供该值信息，则默认为"USD"；非俄罗斯卖家这个属性值可以不提供。对于俄罗斯海外卖家，该单位值必须提供，如: "RUB"。
 	 **/
 	public $currency_code;
 	
 	/** 
-	 * SKU id，格式：sku_property_id:sku_property_value_id,不需要变更类目不用传，自定义属性必传
+	 * SKU ID，格式：“sku_property_id:property_value_id”，
 	 **/
 	public $id;
 	

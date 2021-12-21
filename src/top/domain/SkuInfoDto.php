@@ -13,6 +13,11 @@ class SkuInfoDto
 	public $discount_price;
 	
 	/** 
+	 * extra params. Configured some special products
+	 **/
+	public $extra_params;
+	
+	/** 
 	 * stock. Maximum:999999, minumum:1
 	 **/
 	public $inventory;

@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.redefining.getonlinelogisticsinfo request
  * 
  * @author auto create
- * @since 1.0, 2020.07.01
+ * @since 1.0, 2021.10.22
  */
 class AliexpressLogisticsRedefiningGetonlinelogisticsinfoRequest
 {

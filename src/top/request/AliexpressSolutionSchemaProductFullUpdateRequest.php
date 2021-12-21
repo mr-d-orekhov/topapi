@@ -3,7 +3,7 @@
  * TOP API: aliexpress.solution.schema.product.full.update request
  * 
  * @author auto create
- * @since 1.0, 2019.07.10
+ * @since 1.0, 2021.04.12
  */
 class AliexpressSolutionSchemaProductFullUpdateRequest
 {

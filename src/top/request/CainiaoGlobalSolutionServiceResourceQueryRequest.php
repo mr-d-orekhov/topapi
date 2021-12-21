@@ -3,7 +3,7 @@
  * TOP API: cainiao.global.solution.service.resource.query request
  * 
  * @author auto create
- * @since 1.0, 2020.07.11
+ * @since 1.0, 2021.11.24
  */
 class CainiaoGlobalSolutionServiceResourceQueryRequest
 {

@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.sellershipmentfortop request
  * 
  * @author auto create
- * @since 1.0, 2021.02.02
+ * @since 1.0, 2021.08.25
  */
 class AliexpressLogisticsSellershipmentfortopRequest
 {
@@ -16,6 +16,11 @@ class AliexpressLogisticsSellershipmentfortopRequest
 	 * memo
 	 **/
 	private $description;
+	
+	/** 
+	 * ioss税号
+	 **/
+	private $ioss;
 	
 	/** 
 	 * 国际运单号
@@ -69,6 +74,17 @@ class AliexpressLogisticsSellershipmentfortopRequest
 	public function getDescription()
 	{
 		return $this->description;
+	}
+
+	public function setIoss($ioss)
+	{
+		$this->ioss = $ioss;
+		$this->apiParas["ioss"] = $ioss;
+	}
+
+	public function getIoss()
+	{
+		return $this->ioss;
 	}
 
 	public function setLogisticsNo($logisticsNo)

@@ -28,6 +28,11 @@ class PostProductRequestDto
 	public $category_id;
 	
 	/** 
+	 * extra params. Configured some special products
+	 **/
+	public $extra_params;
+	
+	/** 
 	 * freight template ID. After the merchant has created an freight template in the backend: freighttemplate.aliexpress.com, the id could be obtained in the backend directly or thourgh the API: aliexpress.freight.redefining.listfreighttemplate
 	 **/
 	public $freight_template_id;
@@ -48,6 +53,11 @@ class PostProductRequestDto
 	public $main_image_urls_list;
 	
 	/** 
+	 * marketing images for product. Currently supported 2 types: 1 represents 3:4 rectangle(resolution at least 750*1000) image while 2 represents 1:1 square image(Resolution at least 800*800). The image url needs to be obtained via uploading the image through Aliexpress API: aliexpress.photobank.redefining.uploadimageforsdk(https://developers.aliexpress.com/en/doc.htm?docId=30186&docType=2)
+	 **/
+	public $marketing_images;
+	
+	/** 
 	 * multi country price configuration
 	 **/
 	public $multi_country_price_configuration;
@@ -63,17 +73,17 @@ class PostProductRequestDto
 	public $multi_language_subject_list;
 	
 	/** 
-	 * Package height measured in centimeters (cm). Maximum 700 cm, minumum: 0.01cm
+	 * Package height measured in centimeters (cm). Maximum 700 cm, minumum: 1cm
 	 **/
 	public $package_height;
 	
 	/** 
-	 * Package length, measured in centimeters (cm). Maximum 700 cm, minumum: 0.01cm
+	 * Package length, measured in centimeters (cm). Maximum 700 cm, minumum: 1cm
 	 **/
 	public $package_length;
 	
 	/** 
-	 * Package width measured in centimeters (cm). Maximum 700 cm, minumum: 0.01cm
+	 * Package width measured in centimeters (cm). Maximum 700 cm, minumum: 1cm
 	 **/
 	public $package_width;
 	
