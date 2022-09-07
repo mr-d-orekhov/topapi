@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.order.modifyshipment request
  * 
  * @author auto create
- * @since 1.0, 2021.10.22
+ * @since 1.0, 2022.02.23
  */
 class AliexpressLogisticsOrderModifyshipmentRequest
 {

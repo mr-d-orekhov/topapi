@@ -13,6 +13,11 @@ class SkuInfoDto
 	public $discount_price;
 	
 	/** 
+	 * EAN or EAN13, stands for international product number (formerly European product number). It is an extension of UPC codes, and you will find them as barcodes on most everyday products. It will be empty if you don't fill it in
+	 **/
+	public $ean_code;
+	
+	/** 
 	 * extra params. Configured some special products
 	 **/
 	public $extra_params;
@@ -28,7 +33,7 @@ class SkuInfoDto
 	public $price;
 	
 	/** 
-	 * sku attribute list. Some categories don't have sku attributes, then sku_attributes_list should be empty.
+	 * sku attribute list. Some categories don't have sku attributes, then sku_attributes_list should be empty.When there are more than one sku in the sku_info_list, sku_attributes_list is required for each of them, please do not let them empty
 	 **/
 	public $sku_attributes_list;
 	

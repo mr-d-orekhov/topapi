@@ -1,7 +1,7 @@
 <?php
 
 /**
- * sku attribute list. Some categories don't have sku attributes, then sku_attributes_list should be empty.
+ * sku attribute list. Some categories don't have sku attributes, then sku_attributes_list should be empty.When there are more than one sku in the sku_info_list, sku_attributes_list is required for each of them, please do not let them empty
  * @author auto create
  */
 class SkuAttributeDto
@@ -18,7 +18,7 @@ class SkuAttributeDto
 	public $sku_attribute_name_id;
 	
 	/** 
-	 * Customized sku attribute value by sellers, do not include these 4 symbols #:=,
+	 * Customized sku attribute value by sellers, do not include these 4 symbols { # : = , }.maximum 70 characters.
 	 **/
 	public $sku_attribute_value;
 	

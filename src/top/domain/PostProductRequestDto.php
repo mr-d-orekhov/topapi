@@ -28,6 +28,11 @@ class PostProductRequestDto
 	public $category_id;
 	
 	/** 
+	 * More information about the request.
+	 **/
+	public $developer_features;
+	
+	/** 
 	 * extra params. Configured some special products
 	 **/
 	public $extra_params;
@@ -48,7 +53,7 @@ class PostProductRequestDto
 	public $inventory_deduction_strategy;
 	
 	/** 
-	 * Main image that represents the product. The url should be accesible and there is a meximum of 6 pictures. The url can point to a seller's server or to AliExpress photobank. In order to obtain more information about the photobank and how to upload images, please visit the following page: https://developers.aliexpress.com/en/doc.htm?docId=30186&docType=2
+	 * Main image that represents the product. The url should be accesible and there is a maximum of 6 pictures. The url can point to a seller's server or to AliExpress photobank. In order to obtain more information about the photobank and how to upload images, please visit the following page: https://developers.aliexpress.com/en/doc.htm?docId=30186&docType=2
 	 **/
 	public $main_image_urls_list;
 	

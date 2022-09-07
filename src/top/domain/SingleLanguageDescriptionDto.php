@@ -8,12 +8,12 @@ class SingleLanguageDescriptionDto
 {
 	
 	/** 
-	 * Support: en(English) ru(Russian) es(Spanish) fr(French) it(Italian) tr(Turkish) pt(Portuguese) de(German) nl(Dutch) in(Indonesian) ar(Arabic) ja(Japanese) ko(Korean) th(Thai) vi(Vietnamese) iw(Hebrew)
+	 * Support: en(English) ru(Russian) es(Spanish) fr(French) it(Italian) tr(Turkish) pt(Portuguese) de(German) nl(Dutch) in(Indonesian) ar(Arabic) ja(Japanese) ko(Korean) th(Thai) vi(Vietnamese) iw(Hebrew).Must contains the original locale.
 	 **/
 	public $language;
 	
 	/** 
-	 * mobile detail for  this language, please check the format here https://developers.aliexpress.com/en/doc.htm?docId=109534&docType=1
+	 * mobile detail for  this language, do not support "html" and "dynamic" type, for more information, please check the format here https://developers.aliexpress.com/en/doc.htm?docId=109534&docType=1
 	 **/
 	public $mobile_detail;
 	

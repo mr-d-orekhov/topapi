@@ -8,12 +8,12 @@ class SingleLanguageTitleDto
 {
 	
 	/** 
-	 * Support: en(English) ru(Russian) es(Spanish) fr(French) it(Italian) tr(Turkish) pt(Portuguese) de(German) nl(Dutch) in(Indonesian) ar(Arabic) ja(Japanese) ko(Korean) th(Thai) vi(Vietnamese) iw(Hebrew)
+	 * Support: en(English) ru(Russian) es(Spanish) fr(French) it(Italian) tr(Turkish) pt(Portuguese) de(German) nl(Dutch) in(Indonesian) ar(Arabic) ja(Japanese) ko(Korean) th(Thai) vi(Vietnamese) iw(Hebrew).Must contains the original locale.
 	 **/
 	public $language;
 	
 	/** 
-	 * subject, maximum 128 characters.
+	 * subject, maximum 218 characters.
 	 **/
 	public $subject;	
 }

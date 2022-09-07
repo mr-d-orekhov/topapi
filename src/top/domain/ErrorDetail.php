@@ -1,7 +1,7 @@
 <?php
 
 /**
- * errorDetails
+ * 错误详情
  * @author auto create
  */
 class ErrorDetail

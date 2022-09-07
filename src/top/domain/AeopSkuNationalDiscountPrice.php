@@ -13,7 +13,7 @@ class AeopSkuNationalDiscountPrice
 	public $discount_price;
 	
 	/** 
-	 * sku分国家的日常促销价价格
+	 * sku分国家的日常促销价国家
 	 **/
 	public $shipto_country;	
 }

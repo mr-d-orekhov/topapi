@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.order.createorder request
  * 
  * @author auto create
- * @since 1.0, 2021.12.20
+ * @since 1.0, 2022.07.08
  */
 class AliexpressLogisticsOrderCreateorderRequest
 {
@@ -18,7 +18,7 @@ class AliexpressLogisticsOrderCreateorderRequest
 	private $declareProductDTOs;
 	
 	/** 
-	 * 国内快递公司名称,物流公司Id为-1时,必填
+	 * 国内快递公司编码,物流公司Id为-1时,必填
 	 **/
 	private $domesticLogisticsCompany;
 	
@@ -246,6 +246,7 @@ class AliexpressLogisticsOrderCreateorderRequest
 	public function check()
 	{
 		
+		RequestCheckUtil::checkNotNull($this->addressDTOs,"addressDTOs");
 		RequestCheckUtil::checkNotNull($this->domesticLogisticsCompanyId,"domesticLogisticsCompanyId");
 		RequestCheckUtil::checkNotNull($this->domesticTrackingNo,"domesticTrackingNo");
 		RequestCheckUtil::checkMaxLength($this->topUserKey,16,"topUserKey");

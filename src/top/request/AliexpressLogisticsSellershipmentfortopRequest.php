@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.sellershipmentfortop request
  * 
  * @author auto create
- * @since 1.0, 2021.08.25
+ * @since 1.0, 2022.01.04
  */
 class AliexpressLogisticsSellershipmentfortopRequest
 {
@@ -21,6 +21,11 @@ class AliexpressLogisticsSellershipmentfortopRequest
 	 * ioss税号
 	 **/
 	private $ioss;
+	
+	/** 
+	 * 多语言，es_ES西班牙语， pt_BR巴西
+	 **/
+	private $locale;
 	
 	/** 
 	 * 国际运单号
@@ -85,6 +90,17 @@ class AliexpressLogisticsSellershipmentfortopRequest
 	public function getIoss()
 	{
 		return $this->ioss;
+	}
+
+	public function setLocale($locale)
+	{
+		$this->locale = $locale;
+		$this->apiParas["locale"] = $locale;
+	}
+
+	public function getLocale()
+	{
+		return $this->locale;
 	}
 
 	public function setLogisticsNo($logisticsNo)

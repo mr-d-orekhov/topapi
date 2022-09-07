@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.service.query request
  * 
  * @author auto create
- * @since 1.0, 2021.09.26
+ * @since 1.0, 2022.01.21
  */
 class AliexpressLogisticsServiceQueryRequest
 {

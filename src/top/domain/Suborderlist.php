@@ -8,22 +8,22 @@ class Suborderlist
 {
 	
 	/** 
-	 * 高
+	 * 高;必填;单位cm
 	 **/
 	public $goods_height;
 	
 	/** 
-	 * 长
+	 * 长;必填;单位cm
 	 **/
 	public $goods_length;
 	
 	/** 
-	 * 重量
+	 * 重量;必填;单位KG
 	 **/
 	public $goods_weight;
 	
 	/** 
-	 * 宽
+	 * 宽;必填;单位cm
 	 **/
 	public $goods_width;
 	

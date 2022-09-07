@@ -3,7 +3,7 @@
  * TOP API: aliexpress.offer.redefining.copysizetemplate request
  * 
  * @author auto create
- * @since 1.0, 2021.12.15
+ * @since 1.0, 2022.08.22
  */
 class AliexpressOfferRedefiningCopysizetemplateRequest
 {

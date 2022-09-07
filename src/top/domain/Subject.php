@@ -1,19 +1,19 @@
 <?php
 
 /**
- * 商品多语言标题
+ * 多语言标题
  * @author auto create
  */
 class Subject
 {
 	
 	/** 
-	 * 标题locale
+	 * 语种标记locale
 	 **/
 	public $locale;
 	
 	/** 
-	 * 标题内容
+	 * 多语言标题内容
 	 **/
 	public $value;	
 }

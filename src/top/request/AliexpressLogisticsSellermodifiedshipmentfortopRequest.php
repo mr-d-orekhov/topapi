@@ -3,7 +3,7 @@
  * TOP API: aliexpress.logistics.sellermodifiedshipmentfortop request
  * 
  * @author auto create
- * @since 1.0, 2021.08.25
+ * @since 1.0, 2022.01.04
  */
 class AliexpressLogisticsSellermodifiedshipmentfortopRequest
 {
@@ -16,6 +16,11 @@ class AliexpressLogisticsSellermodifiedshipmentfortopRequest
 	 * memo
 	 **/
 	private $description;
+	
+	/** 
+	 * 多语言，ae_ES西班牙语，pt_BR巴西
+	 **/
+	private $locale;
 	
 	/** 
 	 * 新的运单号
@@ -79,6 +84,17 @@ class AliexpressLogisticsSellermodifiedshipmentfortopRequest
 	public function getDescription()
 	{
 		return $this->description;
+	}
+
+	public function setLocale($locale)
+	{
+		$this->locale = $locale;
+		$this->apiParas["locale"] = $locale;
+	}
+
+	public function getLocale()
+	{
+		return $this->locale;
 	}
 
 	public function setNewLogisticsNo($newLogisticsNo)

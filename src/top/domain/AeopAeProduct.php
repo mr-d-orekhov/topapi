@@ -128,6 +128,11 @@ class AeopAeProduct
 	public $mobile_detail;
 	
 	/** 
+	 * 模特尺码数据，最多5个，单位厘米
+	 **/
+	public $mode_size_chart_list;
+	
+	/** 
 	 * 商品拥有者的login_id
 	 **/
 	public $owner_member_id;

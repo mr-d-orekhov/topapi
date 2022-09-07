@@ -3,7 +3,7 @@
  * TOP API: aliexpress.offer.product.edit request
  * 
  * @author auto create
- * @since 1.0, 2021.10.14
+ * @since 1.0, 2022.02.12
  */
 class AliexpressOfferProductEditRequest
 {

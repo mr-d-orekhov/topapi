@@ -3,7 +3,7 @@
  * TOP API: cainiao.global.solution.inquiry request
  * 
  * @author auto create
- * @since 1.0, 2021.11.24
+ * @since 1.0, 2022.08.22
  */
 class CainiaoGlobalSolutionInquiryRequest
 {
@@ -16,11 +16,6 @@ class CainiaoGlobalSolutionInquiryRequest
 	 * 包裹参数
 	 **/
 	private $packageParams;
-	
-	/** 
-	 * 商家信息
-	 **/
-	private $sellerInfoParam;
 	
 	/** 
 	 * 交易单参数
@@ -51,17 +46,6 @@ class CainiaoGlobalSolutionInquiryRequest
 		return $this->packageParams;
 	}
 
-	public function setSellerInfoParam($sellerInfoParam)
-	{
-		$this->sellerInfoParam = $sellerInfoParam;
-		$this->apiParas["seller_info_param"] = $sellerInfoParam;
-	}
-
-	public function getSellerInfoParam()
-	{
-		return $this->sellerInfoParam;
-	}
-
 	public function setTradeOrderParam($tradeOrderParam)
 	{
 		$this->tradeOrderParam = $tradeOrderParam;
@@ -86,7 +70,6 @@ class CainiaoGlobalSolutionInquiryRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->sellerInfoParam,"sellerInfoParam");
 	}
 	
 	public function putOtherTextParam($key, $value) {

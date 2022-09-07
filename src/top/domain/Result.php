@@ -1,60 +1,30 @@
 <?php
 
 /**
- * result list
+ * 接口返回model
  * @author auto create
  */
 class Result
 {
 	
 	/** 
-	 * 可用物流服务列表
+	 * 当前页
 	 **/
-	public $available_logistic_service_list;
+	public $current_page;
 	
 	/** 
-	 * 交货地址
+	 * 结果
 	 **/
-	public $delivery_address;
+	public $result_list;
 	
 	/** 
-	 * 是否国际快递线路
+	 * 是否成功
 	 **/
-	public $express_logistics_service;
+	public $success;
 	
 	/** 
-	 * 物流方案ID
+	 * totalPage
 	 **/
-	public $logistics_service_id;
-	
-	/** 
-	 * 物流方案名称
-	 **/
-	public $logistics_service_name;
-	
-	/** 
-	 * 运输时效
-	 **/
-	public $logistics_timeliness;
-	
-	/** 
-	 * 其它费用项
-	 **/
-	public $other_fees;
-	
-	/** 
-	 * 推荐指数
-	 **/
-	public $recommend_index;
-	
-	/** 
-	 * 试算结果
-	 **/
-	public $trial_result;
-	
-	/** 
-	 * 仓库中文名称
-	 **/
-	public $warehouse_name;	
+	public $total_page;	
 }
 ?>

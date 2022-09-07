@@ -3,7 +3,7 @@
  * TOP API: cainiao.global.solution.service.resource.query request
  * 
  * @author auto create
- * @since 1.0, 2021.11.24
+ * @since 1.0, 2022.08.22
  */
 class CainiaoGlobalSolutionServiceResourceQueryRequest
 {
@@ -11,11 +11,6 @@ class CainiaoGlobalSolutionServiceResourceQueryRequest
 	 * 多语言信息
 	 **/
 	private $locale;
-	
-	/** 
-	 * 商家信息
-	 **/
-	private $sellerParam;
 	
 	/** 
 	 * 发件信息
@@ -38,17 +33,6 @@ class CainiaoGlobalSolutionServiceResourceQueryRequest
 	public function getLocale()
 	{
 		return $this->locale;
-	}
-
-	public function setSellerParam($sellerParam)
-	{
-		$this->sellerParam = $sellerParam;
-		$this->apiParas["seller_param"] = $sellerParam;
-	}
-
-	public function getSellerParam()
-	{
-		return $this->sellerParam;
 	}
 
 	public function setSenderParam($senderParam)
@@ -86,7 +70,6 @@ class CainiaoGlobalSolutionServiceResourceQueryRequest
 	public function check()
 	{
 		
-		RequestCheckUtil::checkNotNull($this->sellerParam,"sellerParam");
 	}
 	
 	public function putOtherTextParam($key, $value) {

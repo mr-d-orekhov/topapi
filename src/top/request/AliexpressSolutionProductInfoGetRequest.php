@@ -3,7 +3,7 @@
  * TOP API: aliexpress.solution.product.info.get request
  * 
  * @author auto create
- * @since 1.0, 2021.09.08
+ * @since 1.0, 2022.07.05
  */
 class AliexpressSolutionProductInfoGetRequest
 {
