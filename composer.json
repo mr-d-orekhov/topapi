@@ -1,5 +1,6 @@
 {
   "name": "zvetnoe/topsdk",
+  "version": "0.1",
   "description": "topsdk copy from app",
   "license": "MIT",
   "autoload": {
